@@ -511,7 +511,102 @@
     color: var(--muted);
     font-size: 0.8rem;
   }
+/* ================= MOBILE RESPONSIVE ================= */
 
+@media (max-width: 768px) {
+
+  body {
+    cursor: auto; /* disable custom cursor on mobile */
+  }
+
+  .cursor, .cursor-ring {
+    display: none;
+  }
+
+  /* NAV */
+  nav {
+    padding: 1rem 4%;
+  }
+
+  .nav-links {
+    display: none; /* hide menu (you can add hamburger later) */
+  }
+
+  /* HERO */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    order: -1; /* move card above text */
+  }
+
+  /* ABOUT */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact-wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* RESUME */
+  .resume-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* GENERAL SPACING */
+  section {
+    padding: 4rem 4%;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-role {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+}
   /* BG GLOW */
   .glow {
     position: fixed;
